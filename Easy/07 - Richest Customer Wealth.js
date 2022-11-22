@@ -2,7 +2,6 @@
 
 const maximumWealth = (arr) => {
     let maxWealth = Number.MIN_VALUE;
-
     for (let i = 0; i < arr.length; i++) {
         let sum = 0;
         for (let j = 0; j < arr[i].length; j++) {
@@ -15,6 +14,7 @@ const maximumWealth = (arr) => {
     return maxWealth;
 }
 
+// Solution using reduce and map
 const maximumWealth1 = (arr) => {
     return Math.max(...arr.map(element => element.reduce((acc, num) => acc + num, 0)));
 }
