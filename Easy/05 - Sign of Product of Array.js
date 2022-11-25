@@ -12,7 +12,7 @@ const arraySign = (arr) => {
     }
     // If the count is even then the result will be positive and if the count is negative then the result will be negative
     return count % 2 === 0 ? 1 : -1;
-}
+};
 
 const arr = [1, 2, 3, 4, -1, -2, -3];
 console.log(arraySign(arr));

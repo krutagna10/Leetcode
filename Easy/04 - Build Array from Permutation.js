@@ -6,7 +6,7 @@ const buildArray = (arr) => {
        ans[i] = arr[arr[i]];
     }
     return ans;
-}
+};
 
 const buildArray1 = (arr) => {
     return arr.map(element => arr[element]);

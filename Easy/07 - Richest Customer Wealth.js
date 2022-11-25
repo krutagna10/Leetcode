@@ -12,7 +12,7 @@ const maximumWealth = (arr) => {
         }
     }
     return maxWealth;
-}
+};
 
 // Solution using reduce and map
 const maximumWealth1 = (arr) => {

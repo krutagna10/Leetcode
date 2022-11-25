@@ -7,7 +7,7 @@ const getConcatenation = (arr) => {
        ans[arr.length + i] = arr[i];
    }
    return ans;
-}
+};
 
 // Second Method
 const getConcatenation1 = (arr) => {

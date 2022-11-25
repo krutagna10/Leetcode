@@ -6,7 +6,7 @@ const runningSum = (arr) => {
         sum = sum + element;
         return sum;
     });
-}
+};
 
 const arr = [1, 2, 3, 4];
 console.log(runningSum(arr));
