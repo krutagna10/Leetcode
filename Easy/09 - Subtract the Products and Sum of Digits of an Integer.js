@@ -8,7 +8,6 @@ const subtractProductAndSum = (num) => {
         product = product * remainder;
         num = Math.floor(num / 10);
     }
-
     return product - sum;
 };
 
