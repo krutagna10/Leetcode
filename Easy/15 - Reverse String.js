@@ -14,13 +14,13 @@ const reverseString = (s) => {
         start++;
         end--;
     }
-    return s;
 };
 
 // Javascript one line solution
 const reverseString1 = (s) => {
-    return s.reverse();
+    s.reverse();
 };
 
 const s = ['H', 'e', 'l', 'l', 'o'];
-console.log(reverseString(s));
+reverseString(s);
+console.log(s);
