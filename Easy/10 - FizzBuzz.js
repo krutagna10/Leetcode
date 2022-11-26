@@ -1,3 +1,5 @@
+'use strict';
+
 const fizzBuzz = (n) => {
     let arr = [];
     for(let i = 1; i <= n; i++) {
