@@ -22,7 +22,5 @@ const maximumWealth1 = (arr) => {
 let arr = [[1, 2], [3, 4], [5, 6]];
 console.log(maximumWealth(arr));
 
-console.log(Math.max(...[1, 2, 3]));
-console.log(Math.max(1, 2, 3));
 
 
