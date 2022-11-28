@@ -19,8 +19,8 @@ const arraySign1 = (arr) => {
         return 0;
     }
 
-    const count = arr.filter(element => element < 0);
-    return count.length % 2 === 0 ? 1 : -1;
+    const count = arr.filter(element => element < 0).length;
+    return count % 2 === 0 ? 1 : -1;
 };
 
 const arr = [1, 2, 3, 4, -1, -2, -3, -1];
