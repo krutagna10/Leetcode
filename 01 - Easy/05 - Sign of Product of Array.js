@@ -14,5 +14,14 @@ const arraySign = (arr) => {
     return count % 2 === 0 ? 1 : -1;
 };
 
-const arr = [1, 2, 3, 4, -1, -2, -3];
+const arraySign1 = (arr) => {
+    if (arr.includes(0)) {
+        return 0;
+    }
+
+    const count = arr.filter(element => element < 0);
+    return count.length % 2 === 0 ? 1 : -1;
+};
+
+const arr = [1, 2, 3, 4, -1, -2, -3, -1];
 console.log(arraySign(arr));

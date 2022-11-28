@@ -17,5 +17,17 @@ const isUgly = (n) => {
     return n === 1;
 };
 
+const isUgly1 = (n) => {
+  const arr = [2, 3, 5];
+  const num = arr.reduce((acc, element) => {
+      while (acc % element === 0 && acc !== 0) {
+          acc = acc / element;
+      }
+      return acc;
+  }, n);
+
+  return num === 1;
+};
+
 const n = 6;
 console.log(isUgly(n));
