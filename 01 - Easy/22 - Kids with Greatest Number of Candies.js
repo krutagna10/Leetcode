@@ -1,3 +1,5 @@
+'use strict';
+
 const kidsWithCandies = function(candies, extraCandies) {
     const maxElement = Math.max(...candies);
     return candies.map(element => element + extraCandies >= maxElement);
