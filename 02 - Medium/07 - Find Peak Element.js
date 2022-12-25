@@ -16,6 +16,10 @@ const findPeakElement = (arr) => {
         }
     }
     return start;
+};
+
+const findPeakElement1 = (arr) => {
+    return arr.indexOf(Math.max(...arr));
 }
 
 const arr =  [1, 2, 3, 4, 1];

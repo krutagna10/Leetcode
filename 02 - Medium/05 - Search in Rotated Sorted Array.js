@@ -50,5 +50,11 @@ const binarySearch = (arr, target, start, end) => {
     return -1;
 };
 
+// Using index of method
+const search1 = (arr, target) => {
+    return arr.indexOf(target);
+}
+
 const arr = [3, 4, 1, 2];
-console.log(search(arr, 3));
+const target = 3;
+console.log(search(arr, target));

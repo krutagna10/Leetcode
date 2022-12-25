@@ -1,7 +1,10 @@
 'use strict';
 
-const solution = (isBadVersion) => {
-    return function(n) {
+const isBadVersion = (n) => {
+    return n > 3;
+}
+
+const findBadVersion = (n) => {
         let start = 1;
         let end = n;
         while (start <= end) {
@@ -13,5 +16,12 @@ const solution = (isBadVersion) => {
             }
         }
         return start;
-    };
 };
+
+const n = 5;
+console.log(findBadVersion(5));
+
+
+
+
+

@@ -22,6 +22,6 @@ const searchRange = (arr, target) => {
 };
 
 
-const arr = [3, 3, 3, 5, 5, 7, 7, 8, 8, 10, 10];
+const arr = [3, 3, 3, 10, 10];
 const target = 3;
 console.log(searchRange(arr, target))
