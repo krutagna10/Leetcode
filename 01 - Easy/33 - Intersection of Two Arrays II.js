@@ -26,4 +26,3 @@ const arr1 = [1, 2, 2, 1];
 const arr2 = [2, 2];
 console.log(intersect(arr1, arr2));
 
-c
