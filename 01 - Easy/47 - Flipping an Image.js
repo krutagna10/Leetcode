@@ -19,7 +19,7 @@ const flipAndInvertImage = (image) => {
 
 const flipAndInvertImage1 = (image) => {
     return image.map(element => element.reverse().map(item => item === 1 ? 0 : 1));
-}
+};
 
 const image = [[1,1,0],
     [1,0,1],
