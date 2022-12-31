@@ -1,7 +1,7 @@
 ## Leetcode
 LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.
 
-#### Leetcode Profile : [https://leetcode.com/krutagna10/]
-
 ## Milestones
 50 questions : 20 December, 2022
+
+#### Leetcode Profile : [https://leetcode.com/krutagna10/]
