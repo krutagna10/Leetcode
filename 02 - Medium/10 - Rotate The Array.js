@@ -17,8 +17,17 @@ const reverse = (arr, start, end) => {
     }
 }
 
+// Solution using unshift and slice
+const rotateArray1 = (arr, k) => {
+    k = k % arr.length;
+    arr.unshift(...arr.splice(arr.length - k));
+}
+
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
 const k = 3;
-rotateArray(arr, k);
+rotateArray1(arr, k);
 console.log(arr);
+
+
+
