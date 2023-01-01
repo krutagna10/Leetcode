@@ -10,5 +10,5 @@ const fib = (n) => {
     }
 };
 
-let n = 5;
+let n = 50;
 console.log(fib(n));
