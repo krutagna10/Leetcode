@@ -41,4 +41,4 @@ const findNumbers2 = (arr) => {
 }
 
 const arr = [2, 4, 6, 8, 10];
-console.log(findNumbers2(arr));
+console.log(findNumbers(arr));
