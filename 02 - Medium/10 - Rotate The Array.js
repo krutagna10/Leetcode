@@ -26,7 +26,7 @@ const rotateArray1 = (arr, k) => {
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
 const k = 3;
-rotateArray1(arr, k);
+rotateArray(arr, k);
 console.log(arr);
 
 
