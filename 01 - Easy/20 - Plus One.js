@@ -6,18 +6,25 @@ const plusOne = (digits) => {
 };
 
 const plusOne1 = (digits) => {
+    let x = 1;
+    let i = digits.length - 1;
     let ans = [];
-    let index = 0;
-    for (let i = digits.length - 1; i >= 0; i--) {
-        if (digits[i] < 9) {
-            digits[i] = digits[i] + 1;
-            return digits;
+    while (i >= 0 || x > 0) {
+        if (x > 0 && i >= 0) {
+            let sum = x + digits[i];
+            ans.push(sum % 10);
+            x = Math.floor(sum / 10);
+        } else if (x > 0 && i < 0) {
+            ans.push(x % 10);
+            x = Math.floor(x / 10);
         } else {
-            digits[i] = 0;
+            ans.push(digits[i]);
         }
+        i--;
     }
+    return ans.reverse();
 }
 
-const digits = [1, 2, 4];
+const digits = [9, 9, 9];
 console.log(plusOne1(digits));
 
