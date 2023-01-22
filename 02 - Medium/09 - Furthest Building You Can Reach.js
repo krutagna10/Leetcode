@@ -76,7 +76,7 @@ class Heap {
 const furthestBuilding = (heights, bricks, ladders) => {
     let heap = new Heap();
 
-    for(let i = 0; i < heights.length - 1; i++) {
+    for (let i = 0; i < heights.length - 1; i++) {
         if (heights[i] >= heights[i + 1]) {
             continue;
         }
@@ -84,9 +84,7 @@ const furthestBuilding = (heights, bricks, ladders) => {
         bricks = bricks - jump;
         heap.add(jump);
         if (bricks < 0) {
-            console.log(heap);
             bricks = bricks + heap.poll();
-            console.log(bricks);
             if (ladders > 0) {
                 ladders--;
             }
@@ -106,4 +104,13 @@ const bricks = 5;
 const ladders = 1;
 
 console.log(furthestBuilding(heights, bricks, ladders))
+
+let heap = new Heap();
+heap.add(1);
+heap.add(5);
+heap.add(3);
+heap.add(7);
+heap.add(6);
+heap.add(4);
+console.log(heap);
 
