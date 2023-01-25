@@ -103,14 +103,7 @@ const heights = [4, 2, 7, 6, 9, 14, 12];
 const bricks = 5;
 const ladders = 1;
 
-console.log(furthestBuilding(heights, bricks, ladders))
+console.log(furthestBuilding(heights, bricks, ladders));
 
-let heap = new Heap();
-heap.add(1);
-heap.add(5);
-heap.add(3);
-heap.add(7);
-heap.add(6);
-heap.add(4);
-console.log(heap);
+
 

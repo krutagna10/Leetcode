@@ -4,7 +4,7 @@ const findRotation = (matrix, target) => {
     // Creating rotated matrix
     const rotatedMatrix = new Array(matrix.length).fill(0).map((element) => new Array(matrix[0].length).fill(0));
 
-    // When the matrix and target are already equal
+    // Initial Condition
     if (checkIfEqual(matrix, rotatedMatrix)) {
         return true;
     }
@@ -53,10 +53,14 @@ const createCopyArray = (arr, copyArr) => {
 };
 
 const matrix = [
-    [0]
+    [1, 0, 1],
+    [0, 1, 1],
+    [0, 0, 1],
 ];
 
 const target = [
-    [0]
+    [0, 0, 1],
+    [0, 1, 0],
+    [1, 1, 1],
 ];
 console.log(findRotation(matrix, target));
