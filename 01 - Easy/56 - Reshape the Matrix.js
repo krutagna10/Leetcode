@@ -31,6 +31,6 @@ const matrix = [
 
 const row = 3;
 const column = 2;
-console.table(matrixReshape(matrix, row, column));
+console.log(matrixReshape(matrix, row, column));
 
 
