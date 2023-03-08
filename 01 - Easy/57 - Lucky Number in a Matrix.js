@@ -2,10 +2,23 @@
 
 const luckyNumbers = (matrix) => {
   const minArray = findMinArray(matrix);
-  const maxArray = findMaxArray(matrix);
-  console.table(matrix);
-  console.log(minArray);
-  console.log(maxArray);
+  const ans = [];
+
+  for (let i = 0; i < matrix[0].length; i++) {
+    let maxElement = Number.MIN_VALUE;
+    let index = -1;
+    for (let j = 0; j < matrix.length; j++) {
+      if (matrix[j][i] > maxElement) {
+        maxElement = matrix[j][i];
+        index = j;
+      }
+    }
+    if (minArray[index] === maxElement) {
+      ans.push(maxElement);
+    }
+  }
+
+  return ans;
 };
 
 const findMinArray = (matrix) => {
@@ -22,24 +35,9 @@ const findMinArray = (matrix) => {
   return minArray;
 };
 
-const findMaxArray = (matrix) => {
-  const maxArray = [];
-  for (let i = 0; i < matrix[0].length; i++) {
-    let maxElement = Number.MIN_VALUE;
-    for (let j = 0; j < matrix.length; j++) {
-      if (matrix[j][i] > maxElement) {
-        maxElement = matrix[j][i];
-      }
-    }
-    maxArray.push(maxElement);
-  }
-  return maxArray;
-};
-
 const matrix = [
-  [3, 7, 8],
-  [9, 11, 13],
-  [15, 16, 17],
+  [7, 8],
+  [1, 2],
 ];
 
 console.log(luckyNumbers(matrix));
