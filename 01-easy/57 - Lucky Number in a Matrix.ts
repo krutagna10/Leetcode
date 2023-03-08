@@ -1,12 +1,10 @@
-"use strict";
-
-const luckyNumbers = (matrix) => {
-  const minArray = findMinArray(matrix);
-  const ans = [];
+const luckyNumbers = (matrix: number[][]): number[] => {
+  const minArray: number[] = findMinArray(matrix);
+  const ans: number[] = [];
 
   for (let i = 0; i < matrix[0].length; i++) {
-    let maxElement = Number.MIN_VALUE;
-    let index = -1;
+    let maxElement: number = Number.MIN_VALUE;
+    let index: number = -1;
     for (let j = 0; j < matrix.length; j++) {
       if (matrix[j][i] > maxElement) {
         maxElement = matrix[j][i];
@@ -21,10 +19,10 @@ const luckyNumbers = (matrix) => {
   return ans;
 };
 
-const findMinArray = (matrix) => {
-  const minArray = [];
+const findMinArray = (matrix: number[][]): number[] => {
+  const minArray: number[] = [];
   for (let i = 0; i < matrix.length; i++) {
-    let minElement = Number.MAX_VALUE;
+    let minElement: number = Number.MAX_VALUE;
     for (let j = 0; j < matrix[i].length; j++) {
       if (matrix[i][j] < minElement) {
         minElement = matrix[i][j];
@@ -35,7 +33,7 @@ const findMinArray = (matrix) => {
   return minArray;
 };
 
-const matrix = [
+const matrix: number[][] = [
   [7, 8],
   [1, 2],
 ];
