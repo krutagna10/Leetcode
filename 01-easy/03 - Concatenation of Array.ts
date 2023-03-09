@@ -1,3 +1,5 @@
+export {};
+
 const getConcatenation = (arr: number[]): number[] => {
   const ans: number[] = [];
   for (let i = 0; i < arr.length; i++) {
