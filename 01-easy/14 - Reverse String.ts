@@ -1,5 +1,3 @@
-"use strict";
-
 const swap = (s: string[], start: number, end: number) => {
   let temp: string = s[start];
   s[start] = s[end];

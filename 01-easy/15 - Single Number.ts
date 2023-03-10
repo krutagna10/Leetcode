@@ -1,5 +1,3 @@
-"use strict";
-
 const singleNumber = (arr: number[]): number => {
   return arr.reduce((acc, element) => acc ^ element, 0);
 };
