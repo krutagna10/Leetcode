@@ -1,5 +1,3 @@
-"use strict";
-
 const runningSum = (arr: number[]): number[] => {
   const ans: number[] = [];
   let sum: number = 0;

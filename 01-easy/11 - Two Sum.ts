@@ -1,5 +1,3 @@
-"use strict";
-
 const twoSum = (arr: number[], target: number): number[] => {
   let map = new Map<number, number>();
   for (let i = 0; i < arr.length; i++) {

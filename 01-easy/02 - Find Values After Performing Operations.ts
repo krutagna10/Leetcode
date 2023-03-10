@@ -1,5 +1,3 @@
-export {};
-
 const finalValueAfterOperations = (operations: string[]): number => {
   let x = 0;
   for (const operator of operations) {
