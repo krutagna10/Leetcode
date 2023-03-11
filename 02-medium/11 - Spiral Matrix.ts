@@ -1,6 +1,9 @@
 const spiralMatrix = (matrix: number[][]): number[] => {
-  const result = [];
+  if (matrix.length === 0) {
+    return [];
+  }
 
+  const result = [];
   let rowBegin = 0;
   let rowEnd = matrix.length - 1;
 
@@ -24,7 +27,7 @@ const spiralMatrix = (matrix: number[][]): number[] => {
 
     // Traverse the bottom row (if it exits)
     if (rowBegin <= rowEnd) {
-      for (let i = columnEnd; i >= 0; i--) {
+      for (let i = columnEnd; i >= columnBegin; i--) {
         result.push(matrix[rowEnd][i]);
       }
       rowEnd--;
