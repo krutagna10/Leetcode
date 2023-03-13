@@ -1,11 +1,9 @@
-'use strict';
-
 const merge = (arr1, m, arr2, n) => {
-    for (let i = 0; i < n; i++) {
-        arr1[m] = arr2[i];
-        m++;
-    }
-    arr1.sort((a, b) => a - b);
+  for (let i = 0; i < n; i++) {
+    arr1[m] = arr2[i];
+    m++;
+  }
+  arr1.sort((a, b) => a - b);
 };
 
 const arr1 = [1, 2, 3, 0, 0, 0];

@@ -1,5 +1,3 @@
-"use strict";
-
 const maximumWealth = (arr: number[][]): number => {
   let maxWealth: number = Number.MIN_VALUE;
   for (let i = 0; i < arr.length; i++) {

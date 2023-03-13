@@ -1,5 +1,3 @@
-"use strict";
-
 const diagonalSum = (matrix) => {
   let sum = 0;
   let index = matrix.length - 1;
