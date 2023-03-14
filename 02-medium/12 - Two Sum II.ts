@@ -1,15 +1,19 @@
 const twoSum = (arr: number[], target: number): number[] => {
-  let map = new Map();
-  for (let i = 0; i < arr.length; i++) {
-    map.set(arr[i], i);
-  }
+  let start: number = 0;
+  let end: number = arr.length - 1;
 
-  for (let i = 0; i < arr.length; i++) {
-    let complement = target - arr[i];
-    if (map.has(complement) && map.get(complement) !== i) {
-      return [i, map.get(complement)];
+  while (start < end) {
+    const sum: number = arr[start] + arr[end];
+
+    if (sum === target) {
+      return [start + 1, end + 1];
+    } else if (sum < target) {
+      start++;
+    } else {
+      end--;
     }
   }
+
   return [-1, -1];
 };
 
