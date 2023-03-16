@@ -35,4 +35,3 @@ const longestCommonPrefix1 = (str) => {
 const str = ["flower", "flow", "flight"];
 console.log(longestCommonPrefix1(str));
 
-console.log(3 && 0);
