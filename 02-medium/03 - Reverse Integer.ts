@@ -1,10 +1,10 @@
-const reverse = (num) => {
-  const isNegative = num < 0;
+const reverse = (num: number): number => {
+  const isNegative: boolean = num < 0;
   num = Math.abs(num);
-  let reverseNum = 0;
+  let reverseNum: number = 0;
 
   while (num !== 0) {
-    let remainder = num % 10;
+    const remainder: number = num % 10;
     reverseNum = reverseNum * 10 + remainder;
     num = Math.floor(num / 10);
   }
@@ -16,10 +16,12 @@ const reverse = (num) => {
   }
 };
 
-const reverse1 = (num) => {
-  const isNegative = num < 0;
+const reverse1 = (num: number): number => {
+  const isNegative: boolean = num < 0;
   num = Math.abs(num);
-  const reverseNum = Number(num.toString().split("").reverse().join(""));
+  const reverseNum: number = Number(
+    num.toString().split("").reverse().join("")
+  );
 
   if (reverseNum > Math.pow(2, 31)) {
     return 0;
@@ -28,5 +30,5 @@ const reverse1 = (num) => {
   }
 };
 
-const num = -123;
-console.log(reverse1(num));
+const num: number = -123;
+console.log(reverse(num));
