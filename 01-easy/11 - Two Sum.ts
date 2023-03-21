@@ -1,5 +1,5 @@
 const twoSum = (arr: number[], target: number): number[] => {
-  let map = new Map<number, number>();
+  let map = new Map();
   for (let i = 0; i < arr.length; i++) {
     map.set(arr[i], i);
   }
@@ -8,7 +8,7 @@ const twoSum = (arr: number[], target: number): number[] => {
     let complement: number = target - arr[i];
     if (map.has(complement) && map.get(complement) !== i) {
       // ! means that we tell typescript the value will never be undefined or null
-      return [i, map.get(complement)!];
+      return [i, map.get(complement)];
     }
   }
 
