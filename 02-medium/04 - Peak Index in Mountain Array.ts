@@ -1,6 +1,7 @@
 const peakIndexInMountainArray = (arr: number[]): number => {
   let start: number = 0;
   let end: number = arr.length - 1;
+
   while (start < end) {
     let mid: number = start + Math.floor((end - start) / 2);
     if (arr[mid] > arr[mid + 1]) {
@@ -9,6 +10,7 @@ const peakIndexInMountainArray = (arr: number[]): number => {
       start = mid + 1;
     }
   }
+
   return start;
 };
 
