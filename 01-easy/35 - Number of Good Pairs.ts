@@ -1,5 +1,5 @@
-const findGoodPairs = function (arr) {
-  let goodPairs = 0;
+const findGoodPairs = (arr: number[]): number => {
+  let goodPairs: number = 0;
   for (let i = 0; i < arr.length - 1; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] === arr[j]) {
@@ -10,5 +10,5 @@ const findGoodPairs = function (arr) {
   return goodPairs;
 };
 
-const arr = [1, 2, 3, 1, 1, 3];
+const arr: number[] = [1, 2, 3, 1, 1, 3];
 console.log(findGoodPairs(arr));
